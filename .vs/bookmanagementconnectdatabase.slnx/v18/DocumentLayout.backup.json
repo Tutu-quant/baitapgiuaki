@@ -1,0 +1,412 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\B\u00E0i t\u1EADp c\u00F4ng ngh\u1EC7 l\u1EADp tr\u00ECnh web\\baitapgiuaki\\bookmanagementconnectdatabase\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\B\u00E0i t\u1EADp c\u00F4ng ngh\u1EC7 l\u1EADp tr\u00ECnh web\\baitapgiuaki\\bookmanagementconnectdatabase\\Views\\RoomTypeBCS240032\\Index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Views\\RoomTypeBCS240032\\Index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\B\u00E0i t\u1EADp c\u00F4ng ngh\u1EC7 l\u1EADp tr\u00ECnh web\\baitapgiuaki\\bookmanagementconnectdatabase\\Repositories\\IRoomImageRepositoryBCS240032.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Repositories\\IRoomImageRepositoryBCS240032.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\B\u00E0i t\u1EADp c\u00F4ng ngh\u1EC7 l\u1EADp tr\u00ECnh web\\bookmanagementconnectdatabase\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\B\u00E0i t\u1EADp c\u00F4ng ngh\u1EC7 l\u1EADp tr\u00ECnh web\\baitapgiuaki\\bookmanagementconnectdatabase\\Models\\RoomBCS240032.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Models\\RoomBCS240032.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\B\u00E0i t\u1EADp c\u00F4ng ngh\u1EC7 l\u1EADp tr\u00ECnh web\\baitapgiuaki\\bookmanagementconnectdatabase\\Models\\RoomTypeBCS240032.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Models\\RoomTypeBCS240032.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\B\u00E0i t\u1EADp c\u00F4ng ngh\u1EC7 l\u1EADp tr\u00ECnh web\\baitapgiuaki\\bookmanagementconnectdatabase\\Models\\RoomImageBCS240032.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Models\\RoomImageBCS240032.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\B\u00E0i t\u1EADp c\u00F4ng ngh\u1EC7 l\u1EADp tr\u00ECnh web\\baitapgiuaki\\bookmanagementconnectdatabase\\Data\\RoomManagementDbContextBCS240032.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Data\\RoomManagementDbContextBCS240032.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\B\u00E0i t\u1EADp c\u00F4ng ngh\u1EC7 l\u1EADp tr\u00ECnh web\\baitapgiuaki\\bookmanagementconnectdatabase\\Repositories\\IRoomTypeRepositoryBCS240032.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Repositories\\IRoomTypeRepositoryBCS240032.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\B\u00E0i t\u1EADp c\u00F4ng ngh\u1EC7 l\u1EADp tr\u00ECnh web\\baitapgiuaki\\bookmanagementconnectdatabase\\Repositories\\RoomTypeRepositoryBCS240032.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Repositories\\RoomTypeRepositoryBCS240032.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\B\u00E0i t\u1EADp c\u00F4ng ngh\u1EC7 l\u1EADp tr\u00ECnh web\\baitapgiuaki\\bookmanagementconnectdatabase\\Repositories\\RoomImageRepositoryBCS240032.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Repositories\\RoomImageRepositoryBCS240032.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\B\u00E0i t\u1EADp c\u00F4ng ngh\u1EC7 l\u1EADp tr\u00ECnh web\\baitapgiuaki\\bookmanagementconnectdatabase\\Repositories\\IRoomRepositoryBCS240032.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Repositories\\IRoomRepositoryBCS240032.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\B\u00E0i t\u1EADp c\u00F4ng ngh\u1EC7 l\u1EADp tr\u00ECnh web\\baitapgiuaki\\bookmanagementconnectdatabase\\Repositories\\RoomRepositoryBCS240032.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Repositories\\RoomRepositoryBCS240032.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\B\u00E0i t\u1EADp c\u00F4ng ngh\u1EC7 l\u1EADp tr\u00ECnh web\\baitapgiuaki\\bookmanagementconnectdatabase\\Controllers\\RoomImageBCS240032Controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Controllers\\RoomImageBCS240032Controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\B\u00E0i t\u1EADp c\u00F4ng ngh\u1EC7 l\u1EADp tr\u00ECnh web\\baitapgiuaki\\bookmanagementconnectdatabase\\Controllers\\RoomTypeBCS240032Controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Controllers\\RoomTypeBCS240032Controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\B\u00E0i t\u1EADp c\u00F4ng ngh\u1EC7 l\u1EADp tr\u00ECnh web\\baitapgiuaki\\bookmanagementconnectdatabase\\Controllers\\RoomBCS240032Controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Controllers\\RoomBCS240032Controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\B\u00E0i t\u1EADp c\u00F4ng ngh\u1EC7 l\u1EADp tr\u00ECnh web\\baitapgiuaki\\bookmanagementconnectdatabase\\Views\\RoomBCS240032\\Edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Views\\RoomBCS240032\\Edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\B\u00E0i t\u1EADp c\u00F4ng ngh\u1EC7 l\u1EADp tr\u00ECnh web\\baitapgiuaki\\bookmanagementconnectdatabase\\Views\\RoomBCS240032\\Delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Views\\RoomBCS240032\\Delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\B\u00E0i t\u1EADp c\u00F4ng ngh\u1EC7 l\u1EADp tr\u00ECnh web\\baitapgiuaki\\bookmanagementconnectdatabase\\Views\\RoomBCS240032\\Create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Views\\RoomBCS240032\\Create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\B\u00E0i t\u1EADp c\u00F4ng ngh\u1EC7 l\u1EADp tr\u00ECnh web\\baitapgiuaki\\bookmanagementconnectdatabase\\Views\\RoomBCS240032\\Details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Views\\RoomBCS240032\\Details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\B\u00E0i t\u1EADp c\u00F4ng ngh\u1EC7 l\u1EADp tr\u00ECnh web\\baitapgiuaki\\bookmanagementconnectdatabase\\Views\\RoomBCS240032\\Index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Views\\RoomBCS240032\\Index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\B\u00E0i t\u1EADp c\u00F4ng ngh\u1EC7 l\u1EADp tr\u00ECnh web\\baitapgiuaki\\bookmanagementconnectdatabase\\Views\\RoomTypeBCS240032\\Create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Views\\RoomTypeBCS240032\\Create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\B\u00E0i t\u1EADp c\u00F4ng ngh\u1EC7 l\u1EADp tr\u00ECnh web\\baitapgiuaki\\bookmanagementconnectdatabase\\Views\\RoomTypeBCS240032\\Edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Views\\RoomTypeBCS240032\\Edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\B\u00E0i t\u1EADp c\u00F4ng ngh\u1EC7 l\u1EADp tr\u00ECnh web\\baitapgiuaki\\bookmanagementconnectdatabase\\Views\\RoomTypeBCS240032\\Delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Views\\RoomTypeBCS240032\\Delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\B\u00E0i t\u1EADp c\u00F4ng ngh\u1EC7 l\u1EADp tr\u00ECnh web\\baitapgiuaki\\bookmanagementconnectdatabase\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\B\u00E0i t\u1EADp c\u00F4ng ngh\u1EC7 l\u1EADp tr\u00ECnh web\\baitapgiuaki\\bookmanagementconnectdatabase\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\B\u00E0i t\u1EADp c\u00F4ng ngh\u1EC7 l\u1EADp tr\u00ECnh web\\baitapgiuaki\\bookmanagementconnectdatabase\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-06-19T04:42:47.363Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\B\u00E0i t\u1EADp c\u00F4ng ngh\u1EC7 l\u1EADp tr\u00ECnh web\\baitapgiuaki\\bookmanagementconnectdatabase\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\B\u00E0i t\u1EADp c\u00F4ng ngh\u1EC7 l\u1EADp tr\u00ECnh web\\baitapgiuaki\\bookmanagementconnectdatabase\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAhwC4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-19T04:34:16.785Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RoomTypeBCS240032.cs",
+              "DocumentMoniker": "D:\\B\u00E0i t\u1EADp c\u00F4ng ngh\u1EC7 l\u1EADp tr\u00ECnh web\\baitapgiuaki\\bookmanagementconnectdatabase\\Models\\RoomTypeBCS240032.cs",
+              "RelativeDocumentMoniker": "Models\\RoomTypeBCS240032.cs",
+              "ToolTip": "D:\\B\u00E0i t\u1EADp c\u00F4ng ngh\u1EC7 l\u1EADp tr\u00ECnh web\\baitapgiuaki\\bookmanagementconnectdatabase\\Models\\RoomTypeBCS240032.cs",
+              "RelativeToolTip": "Models\\RoomTypeBCS240032.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-19T04:16:12.29Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RoomBCS240032.cs",
+              "DocumentMoniker": "D:\\B\u00E0i t\u1EADp c\u00F4ng ngh\u1EC7 l\u1EADp tr\u00ECnh web\\baitapgiuaki\\bookmanagementconnectdatabase\\Models\\RoomBCS240032.cs",
+              "RelativeDocumentMoniker": "Models\\RoomBCS240032.cs",
+              "ToolTip": "D:\\B\u00E0i t\u1EADp c\u00F4ng ngh\u1EC7 l\u1EADp tr\u00ECnh web\\baitapgiuaki\\bookmanagementconnectdatabase\\Models\\RoomBCS240032.cs",
+              "RelativeToolTip": "Models\\RoomBCS240032.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-19T04:16:10.231Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IRoomImageRepositoryBCS240032.cs",
+              "DocumentMoniker": "D:\\B\u00E0i t\u1EADp c\u00F4ng ngh\u1EC7 l\u1EADp tr\u00ECnh web\\baitapgiuaki\\bookmanagementconnectdatabase\\Repositories\\IRoomImageRepositoryBCS240032.cs",
+              "RelativeDocumentMoniker": "Repositories\\IRoomImageRepositoryBCS240032.cs",
+              "ToolTip": "D:\\B\u00E0i t\u1EADp c\u00F4ng ngh\u1EC7 l\u1EADp tr\u00ECnh web\\baitapgiuaki\\bookmanagementconnectdatabase\\Repositories\\IRoomImageRepositoryBCS240032.cs",
+              "RelativeToolTip": "Repositories\\IRoomImageRepositoryBCS240032.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-19T04:16:40.772Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\B\u00E0i t\u1EADp c\u00F4ng ngh\u1EC7 l\u1EADp tr\u00ECnh web\\baitapgiuaki\\bookmanagementconnectdatabase\\Views\\RoomTypeBCS240032\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\RoomTypeBCS240032\\Index.cshtml",
+              "ToolTip": "D:\\B\u00E0i t\u1EADp c\u00F4ng ngh\u1EC7 l\u1EADp tr\u00ECnh web\\baitapgiuaki\\bookmanagementconnectdatabase\\Views\\RoomTypeBCS240032\\Index.cshtml",
+              "RelativeToolTip": "Views\\RoomTypeBCS240032\\Index.cshtml",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAswAsAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-19T04:18:11.647Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RoomImageBCS240032.cs",
+              "DocumentMoniker": "D:\\B\u00E0i t\u1EADp c\u00F4ng ngh\u1EC7 l\u1EADp tr\u00ECnh web\\baitapgiuaki\\bookmanagementconnectdatabase\\Models\\RoomImageBCS240032.cs",
+              "RelativeDocumentMoniker": "Models\\RoomImageBCS240032.cs",
+              "ToolTip": "D:\\B\u00E0i t\u1EADp c\u00F4ng ngh\u1EC7 l\u1EADp tr\u00ECnh web\\baitapgiuaki\\bookmanagementconnectdatabase\\Models\\RoomImageBCS240032.cs",
+              "RelativeToolTip": "Models\\RoomImageBCS240032.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-19T04:16:12.414Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RoomManagementDbContextBCS240032.cs",
+              "DocumentMoniker": "D:\\B\u00E0i t\u1EADp c\u00F4ng ngh\u1EC7 l\u1EADp tr\u00ECnh web\\baitapgiuaki\\bookmanagementconnectdatabase\\Data\\RoomManagementDbContextBCS240032.cs",
+              "RelativeDocumentMoniker": "Data\\RoomManagementDbContextBCS240032.cs",
+              "ToolTip": "D:\\B\u00E0i t\u1EADp c\u00F4ng ngh\u1EC7 l\u1EADp tr\u00ECnh web\\baitapgiuaki\\bookmanagementconnectdatabase\\Data\\RoomManagementDbContextBCS240032.cs",
+              "RelativeToolTip": "Data\\RoomManagementDbContextBCS240032.cs",
+              "ViewState": "AgIAAFAAAAAAAAAAAABBwI0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-19T04:16:25.145Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\B\u00E0i t\u1EADp c\u00F4ng ngh\u1EC7 l\u1EADp tr\u00ECnh web\\baitapgiuaki\\bookmanagementconnectdatabase\\Views\\RoomTypeBCS240032\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Views\\RoomTypeBCS240032\\Delete.cshtml",
+              "ToolTip": "D:\\B\u00E0i t\u1EADp c\u00F4ng ngh\u1EC7 l\u1EADp tr\u00ECnh web\\baitapgiuaki\\bookmanagementconnectdatabase\\Views\\RoomTypeBCS240032\\Delete.cshtml",
+              "RelativeToolTip": "Views\\RoomTypeBCS240032\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-19T04:18:11.568Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\B\u00E0i t\u1EADp c\u00F4ng ngh\u1EC7 l\u1EADp tr\u00ECnh web\\baitapgiuaki\\bookmanagementconnectdatabase\\Views\\RoomTypeBCS240032\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\RoomTypeBCS240032\\Edit.cshtml",
+              "ToolTip": "D:\\B\u00E0i t\u1EADp c\u00F4ng ngh\u1EC7 l\u1EADp tr\u00ECnh web\\baitapgiuaki\\bookmanagementconnectdatabase\\Views\\RoomTypeBCS240032\\Edit.cshtml",
+              "RelativeToolTip": "Views\\RoomTypeBCS240032\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-19T04:18:11.473Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\B\u00E0i t\u1EADp c\u00F4ng ngh\u1EC7 l\u1EADp tr\u00ECnh web\\baitapgiuaki\\bookmanagementconnectdatabase\\Views\\RoomTypeBCS240032\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\RoomTypeBCS240032\\Create.cshtml",
+              "ToolTip": "D:\\B\u00E0i t\u1EADp c\u00F4ng ngh\u1EC7 l\u1EADp tr\u00ECnh web\\baitapgiuaki\\bookmanagementconnectdatabase\\Views\\RoomTypeBCS240032\\Create.cshtml",
+              "RelativeToolTip": "Views\\RoomTypeBCS240032\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-19T04:18:11.331Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\B\u00E0i t\u1EADp c\u00F4ng ngh\u1EC7 l\u1EADp tr\u00ECnh web\\baitapgiuaki\\bookmanagementconnectdatabase\\Views\\RoomBCS240032\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\RoomBCS240032\\Index.cshtml",
+              "ToolTip": "D:\\B\u00E0i t\u1EADp c\u00F4ng ngh\u1EC7 l\u1EADp tr\u00ECnh web\\baitapgiuaki\\bookmanagementconnectdatabase\\Views\\RoomBCS240032\\Index.cshtml",
+              "RelativeToolTip": "Views\\RoomBCS240032\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAANYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-19T04:17:52.321Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\B\u00E0i t\u1EADp c\u00F4ng ngh\u1EC7 l\u1EADp tr\u00ECnh web\\baitapgiuaki\\bookmanagementconnectdatabase\\Views\\RoomBCS240032\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\RoomBCS240032\\Details.cshtml",
+              "ToolTip": "D:\\B\u00E0i t\u1EADp c\u00F4ng ngh\u1EC7 l\u1EADp tr\u00ECnh web\\baitapgiuaki\\bookmanagementconnectdatabase\\Views\\RoomBCS240032\\Details.cshtml",
+              "RelativeToolTip": "Views\\RoomBCS240032\\Details.cshtml",
+              "ViewState": "AgIAAHsAAAAAAAAAAABBwL4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-19T04:17:52.107Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\B\u00E0i t\u1EADp c\u00F4ng ngh\u1EC7 l\u1EADp tr\u00ECnh web\\baitapgiuaki\\bookmanagementconnectdatabase\\Views\\RoomBCS240032\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\RoomBCS240032\\Create.cshtml",
+              "ToolTip": "D:\\B\u00E0i t\u1EADp c\u00F4ng ngh\u1EC7 l\u1EADp tr\u00ECnh web\\baitapgiuaki\\bookmanagementconnectdatabase\\Views\\RoomBCS240032\\Create.cshtml",
+              "RelativeToolTip": "Views\\RoomBCS240032\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-19T04:17:52.022Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\B\u00E0i t\u1EADp c\u00F4ng ngh\u1EC7 l\u1EADp tr\u00ECnh web\\baitapgiuaki\\bookmanagementconnectdatabase\\Views\\RoomBCS240032\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Views\\RoomBCS240032\\Delete.cshtml",
+              "ToolTip": "D:\\B\u00E0i t\u1EADp c\u00F4ng ngh\u1EC7 l\u1EADp tr\u00ECnh web\\baitapgiuaki\\bookmanagementconnectdatabase\\Views\\RoomBCS240032\\Delete.cshtml",
+              "RelativeToolTip": "Views\\RoomBCS240032\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-19T04:17:51.962Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\B\u00E0i t\u1EADp c\u00F4ng ngh\u1EC7 l\u1EADp tr\u00ECnh web\\baitapgiuaki\\bookmanagementconnectdatabase\\Views\\RoomBCS240032\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\RoomBCS240032\\Edit.cshtml",
+              "ToolTip": "D:\\B\u00E0i t\u1EADp c\u00F4ng ngh\u1EC7 l\u1EADp tr\u00ECnh web\\baitapgiuaki\\bookmanagementconnectdatabase\\Views\\RoomBCS240032\\Edit.cshtml",
+              "RelativeToolTip": "Views\\RoomBCS240032\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-19T04:17:51.271Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "RoomBCS240032Controller.cs",
+              "DocumentMoniker": "D:\\B\u00E0i t\u1EADp c\u00F4ng ngh\u1EC7 l\u1EADp tr\u00ECnh web\\baitapgiuaki\\bookmanagementconnectdatabase\\Controllers\\RoomBCS240032Controller.cs",
+              "RelativeDocumentMoniker": "Controllers\\RoomBCS240032Controller.cs",
+              "ToolTip": "D:\\B\u00E0i t\u1EADp c\u00F4ng ngh\u1EC7 l\u1EADp tr\u00ECnh web\\baitapgiuaki\\bookmanagementconnectdatabase\\Controllers\\RoomBCS240032Controller.cs",
+              "RelativeToolTip": "Controllers\\RoomBCS240032Controller.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-19T04:17:08.4Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "RoomTypeBCS240032Controller.cs",
+              "DocumentMoniker": "D:\\B\u00E0i t\u1EADp c\u00F4ng ngh\u1EC7 l\u1EADp tr\u00ECnh web\\baitapgiuaki\\bookmanagementconnectdatabase\\Controllers\\RoomTypeBCS240032Controller.cs",
+              "RelativeDocumentMoniker": "Controllers\\RoomTypeBCS240032Controller.cs",
+              "ToolTip": "D:\\B\u00E0i t\u1EADp c\u00F4ng ngh\u1EC7 l\u1EADp tr\u00ECnh web\\baitapgiuaki\\bookmanagementconnectdatabase\\Controllers\\RoomTypeBCS240032Controller.cs",
+              "RelativeToolTip": "Controllers\\RoomTypeBCS240032Controller.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAALgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-19T04:17:08.295Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "RoomImageBCS240032Controller.cs",
+              "DocumentMoniker": "D:\\B\u00E0i t\u1EADp c\u00F4ng ngh\u1EC7 l\u1EADp tr\u00ECnh web\\baitapgiuaki\\bookmanagementconnectdatabase\\Controllers\\RoomImageBCS240032Controller.cs",
+              "RelativeDocumentMoniker": "Controllers\\RoomImageBCS240032Controller.cs",
+              "ToolTip": "D:\\B\u00E0i t\u1EADp c\u00F4ng ngh\u1EC7 l\u1EADp tr\u00ECnh web\\baitapgiuaki\\bookmanagementconnectdatabase\\Controllers\\RoomImageBCS240032Controller.cs",
+              "RelativeToolTip": "Controllers\\RoomImageBCS240032Controller.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAH0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-19T04:17:08.198Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "RoomRepositoryBCS240032.cs",
+              "DocumentMoniker": "D:\\B\u00E0i t\u1EADp c\u00F4ng ngh\u1EC7 l\u1EADp tr\u00ECnh web\\baitapgiuaki\\bookmanagementconnectdatabase\\Repositories\\RoomRepositoryBCS240032.cs",
+              "RelativeDocumentMoniker": "Repositories\\RoomRepositoryBCS240032.cs",
+              "ToolTip": "D:\\B\u00E0i t\u1EADp c\u00F4ng ngh\u1EC7 l\u1EADp tr\u00ECnh web\\baitapgiuaki\\bookmanagementconnectdatabase\\Repositories\\RoomRepositoryBCS240032.cs",
+              "RelativeToolTip": "Repositories\\RoomRepositoryBCS240032.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-19T04:16:41.166Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IRoomRepositoryBCS240032.cs",
+              "DocumentMoniker": "D:\\B\u00E0i t\u1EADp c\u00F4ng ngh\u1EC7 l\u1EADp tr\u00ECnh web\\baitapgiuaki\\bookmanagementconnectdatabase\\Repositories\\IRoomRepositoryBCS240032.cs",
+              "RelativeDocumentMoniker": "Repositories\\IRoomRepositoryBCS240032.cs",
+              "ToolTip": "D:\\B\u00E0i t\u1EADp c\u00F4ng ngh\u1EC7 l\u1EADp tr\u00ECnh web\\baitapgiuaki\\bookmanagementconnectdatabase\\Repositories\\IRoomRepositoryBCS240032.cs",
+              "RelativeToolTip": "Repositories\\IRoomRepositoryBCS240032.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-19T04:16:41.087Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "RoomImageRepositoryBCS240032.cs",
+              "DocumentMoniker": "D:\\B\u00E0i t\u1EADp c\u00F4ng ngh\u1EC7 l\u1EADp tr\u00ECnh web\\baitapgiuaki\\bookmanagementconnectdatabase\\Repositories\\RoomImageRepositoryBCS240032.cs",
+              "RelativeDocumentMoniker": "Repositories\\RoomImageRepositoryBCS240032.cs",
+              "ToolTip": "D:\\B\u00E0i t\u1EADp c\u00F4ng ngh\u1EC7 l\u1EADp tr\u00ECnh web\\baitapgiuaki\\bookmanagementconnectdatabase\\Repositories\\RoomImageRepositoryBCS240032.cs",
+              "RelativeToolTip": "Repositories\\RoomImageRepositoryBCS240032.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-19T04:16:41.008Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "RoomTypeRepositoryBCS240032.cs",
+              "DocumentMoniker": "D:\\B\u00E0i t\u1EADp c\u00F4ng ngh\u1EC7 l\u1EADp tr\u00ECnh web\\baitapgiuaki\\bookmanagementconnectdatabase\\Repositories\\RoomTypeRepositoryBCS240032.cs",
+              "RelativeDocumentMoniker": "Repositories\\RoomTypeRepositoryBCS240032.cs",
+              "ToolTip": "D:\\B\u00E0i t\u1EADp c\u00F4ng ngh\u1EC7 l\u1EADp tr\u00ECnh web\\baitapgiuaki\\bookmanagementconnectdatabase\\Repositories\\RoomTypeRepositoryBCS240032.cs",
+              "RelativeToolTip": "Repositories\\RoomTypeRepositoryBCS240032.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-19T04:16:40.928Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IRoomTypeRepositoryBCS240032.cs",
+              "DocumentMoniker": "D:\\B\u00E0i t\u1EADp c\u00F4ng ngh\u1EC7 l\u1EADp tr\u00ECnh web\\baitapgiuaki\\bookmanagementconnectdatabase\\Repositories\\IRoomTypeRepositoryBCS240032.cs",
+              "RelativeDocumentMoniker": "Repositories\\IRoomTypeRepositoryBCS240032.cs",
+              "ToolTip": "D:\\B\u00E0i t\u1EADp c\u00F4ng ngh\u1EC7 l\u1EADp tr\u00ECnh web\\baitapgiuaki\\bookmanagementconnectdatabase\\Repositories\\IRoomTypeRepositoryBCS240032.cs",
+              "RelativeToolTip": "Repositories\\IRoomTypeRepositoryBCS240032.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-19T04:16:40.831Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

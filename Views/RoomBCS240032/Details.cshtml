@@ -1,0 +1,162 @@
+@model RoomBCS240032
+@using Lesson3_CNLTWeb.Models;
+
+@{
+    ViewData["Title"] = $"Chi tiết phòng {Model.Name}";
+}
+
+<section class="page-hero">
+    <div>
+        <div class="page-kicker">Chi tiết phòng</div>
+        <h1 class="page-title">@Model.Name</h1>
+        <p class="page-subtitle">Thông tin giá thuê, diện tích, mô tả và ảnh phòng.</p>
+    </div>
+    <div class="stat-strip">
+        <div class="stat-item">
+            <span class="stat-value">@Model.Price.ToString("N0")</span>
+            <span class="stat-label">VNĐ / tháng</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-value">@Model.Area.ToString("F1")</span>
+            <span class="stat-label">m²</span>
+        </div>
+    </div>
+</section>
+
+@if (!string.IsNullOrEmpty(TempData["SuccessMessage"]?.ToString()))
+{
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        @TempData["SuccessMessage"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Đóng"></button>
+    </div>
+}
+
+@if (!string.IsNullOrEmpty(TempData["ErrorMessage"]?.ToString()))
+{
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        @TempData["ErrorMessage"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Đóng"></button>
+    </div>
+}
+
+@if (!string.IsNullOrEmpty(TempData["WarningMessage"]?.ToString()))
+{
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        @TempData["WarningMessage"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Đóng"></button>
+    </div>
+}
+
+<div class="row g-3">
+    <div class="col-lg-5">
+        <section class="detail-panel h-100">
+            <h5 class="mb-3">Thông tin phòng</h5>
+            <table class="table table-sm">
+                <tbody>
+                    <tr>
+                        <td><strong>Tên phòng</strong></td>
+                        <td>@Model.Name</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Loại phòng</strong></td>
+                        <td>@Model.RoomType?.Name</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Giá thuê</strong></td>
+                        <td>@Model.Price.ToString("N0") VNĐ</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Diện tích</strong></td>
+                        <td>@Model.Area.ToString("F2") m²</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Giá/m²</strong></td>
+                        <td>@Model.PricePerSquareMeter.ToString("N0") VNĐ/m²</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Trạng thái</strong></td>
+                        <td>
+                            @if (Model.IsAvailable)
+                            {
+                                <span class="badge text-bg-success">Còn phòng</span>
+                            }
+                            else
+                            {
+                                <span class="badge text-bg-danger">Hết phòng</span>
+                            }
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Mô tả</strong></td>
+                        <td>@(Model.Description ?? "-")</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+    <div class="col-lg-7">
+        <section class="detail-panel h-100">
+            <h5 class="mb-3">Ảnh phòng</h5>
+
+            @if (Model.RoomImages.Any())
+            {
+                <div class="image-grid">
+                    @foreach (var image in Model.RoomImages)
+                    {
+                        <div class="card @(image.IsThumbnail ? "border-primary" : "")">
+                            <img src="@image.ImageUrl" alt="Ảnh phòng @Model.Name" class="card-img-top room-image">
+                            <div class="card-body">
+                                @if (image.IsThumbnail)
+                                {
+                                    <span class="badge text-bg-primary mb-2">Ảnh đại diện</span>
+                                }
+                                else
+                                {
+                                    <form method="post" action="@Url.Action("SetThumbnail", "RoomImageBCS240032")" class="d-inline">
+                                        @Html.AntiForgeryToken()
+                                        <input type="hidden" name="imageId" value="@image.Id">
+                                        <input type="hidden" name="roomId" value="@Model.Id">
+                                        <button type="submit" class="btn btn-sm btn-primary">Đặt đại diện</button>
+                                    </form>
+                                }
+                                <form method="post" action="@Url.Action("Delete", "RoomImageBCS240032")" class="d-inline">
+                                    @Html.AntiForgeryToken()
+                                    <input type="hidden" name="imageId" value="@image.Id">
+                                    <input type="hidden" name="roomId" value="@Model.Id">
+                                    <button type="submit" class="btn btn-sm btn-danger" onclick="return confirm('Bạn chắc chắn muốn xóa ảnh này?');">Xóa</button>
+                                </form>
+                            </div>
+                        </div>
+                    }
+                </div>
+            }
+            else
+            {
+                <div class="empty-state">
+                    <p class="text-muted mb-0">Phòng này chưa có ảnh.</p>
+                </div>
+            }
+
+            <hr />
+            <h6>Thêm ảnh mới</h6>
+            <form method="post" action="@Url.Action("Add", "RoomImageBCS240032")" class="row g-2 align-items-end">
+                @Html.AntiForgeryToken()
+                <input type="hidden" name="roomId" value="@Model.Id">
+                <div class="col-md">
+                    <label for="imageUrl" class="form-label">Đường dẫn ảnh</label>
+                    <input type="url" id="imageUrl" name="imageUrl" class="form-control" placeholder="https://..." required>
+                </div>
+                <div class="col-md-auto">
+                    <button type="submit" class="btn btn-primary">Thêm ảnh</button>
+                </div>
+            </form>
+        </section>
+    </div>
+</div>
+
+<div class="action-row mt-3">
+    <a href="@Url.Action("Edit", new { id = Model.Id })" class="btn btn-warning">Sửa</a>
+    <a href="@Url.Action("Delete", new { id = Model.Id })" class="btn btn-danger">Xóa</a>
+    <a href="@Url.Action("Index")" class="btn btn-outline-secondary">Quay lại</a>
+</div>

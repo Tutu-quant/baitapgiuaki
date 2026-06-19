@@ -1,0 +1,190 @@
+﻿@model RoomBCS240032
+@using Lesson3_CNLTWeb.Models;
+
+@{
+    ViewData["Title"] = $"Chi tiết phòng {Model.Name}";
+}
+
+<div class="container-fluid mt-4">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>@ViewData["Title"]</h1>
+        </div>
+    </div>
+
+    <!-- Messages -->
+    @if (!string.IsNullOrEmpty(TempData["SuccessMessage"]?.ToString()))
+    {
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            @TempData["SuccessMessage"]
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    }
+
+    @if (!string.IsNullOrEmpty(TempData["ErrorMessage"]?.ToString()))
+    {
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            @TempData["ErrorMessage"]
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    }
+
+    @if (!string.IsNullOrEmpty(TempData["WarningMessage"]?.ToString()))
+    {
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            @TempData["WarningMessage"]
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    }
+
+    <!-- Room Info -->
+    <div class="row mt-3">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Thông tin phòng</h5>
+                    <table class="table table-sm">
+                        <tr>
+                            <td><strong>Tên phòng:</strong></td>
+                            <td>@Model.Name</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Loại phòng:</strong></td>
+                            <td>@Model.RoomType?.Name</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Giá thuê:</strong></td>
+                            <td>@Model.Price.ToString("N0") VNĐ</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Diện tích:</strong></td>
+                            <td>@Model.Area.ToString("F2") m²</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Giá/m²:</strong></td>
+                            <td>
+                                @{
+                                    var pricePerM2 = Math.Round(Model.Price / Model.Area, 0);
+                                }
+                                @pricePerM2.ToString("N0") VNĐ/m²
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Địa chỉ:</strong></td>
+                            <td>@Model.Address</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Mô tả:</strong></td>
+                            <td>@Model.Description</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Trạng thái:</strong></td>
+                            <td>
+                                @if (Model.Available)
+                                {
+                                    <span class="badge badge-success">Còn phòng</span>
+                                }
+                                else
+                                {
+                                    <span class="badge badge-danger">Hết phòng</span>
+                                }
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Ngày tạo:</strong></td>
+                            <td>@Model.CreatedDate.ToString("dd/MM/yyyy HH:mm")</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Ngày cập nhật:</strong></td>
+                            <td>@Model.UpdatedDate.ToString("dd/MM/yyyy HH:mm")</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Images Section -->
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Ảnh phòng</h5>
+
+                    @if (Model.RoomImages.Any())
+                    {
+                        <!-- Display thumbnail first -->
+                        @{
+                            var thumbnail = Model.RoomImages.FirstOrDefault(r => r.IsThumbnail);
+                            if (thumbnail != null)
+                            {
+                                <div class="mb-3">
+                                    <img src="@thumbnail.ImageUrl" alt="Thumbnail" class="img-fluid" style="max-height: 300px;">
+                                    <p class="text-muted mt-2"><small>Ảnh đại diện</small></p>
+                                </div>
+                            }
+                        }
+
+                        <!-- Other images -->
+                        @{
+                            var otherImages = Model.RoomImages.Where(r => !r.IsThumbnail).ToList();
+                            if (otherImages.Any())
+                            {
+                                <div class="row">
+                                    @foreach (var image in otherImages)
+                                    {
+                                        <div class="col-md-6 mb-3">
+                                            <div class="card">
+                                                <img src="@image.ImageUrl" alt="Room image" class="card-img-top" style="height: 150px; object-fit: cover;">
+                                                <div class="card-body p-2">
+                                                    <form method="post" action="@Url.Action("SetThumbnail", "RoomImageBCS240032")" class="d-inline">
+                                                        <input type="hidden" name="imageId" value="@image.Id">
+                                                        <input type="hidden" name="roomId" value="@Model.Id">
+                                                        <button type="submit" class="btn btn-sm btn-primary">Đặt làm đại diện</button>
+                                                    </form>
+                                                    <form method="post" action="@Url.Action("Delete", "RoomImageBCS240032")" class="d-inline">
+                                                        <input type="hidden" name="imageId" value="@image.Id">
+                                                        <input type="hidden" name="roomId" value="@Model.Id">
+                                                        <button type="submit" class="btn btn-sm btn-danger" onclick="return confirm('Bạn chắc chắn muốn xóa ảnh này?');">Xóa</button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    }
+                                </div>
+                            }
+                        }
+                    }
+                    else
+                    {
+                        <p class="text-muted">Phòng này chưa có ảnh</p>
+                    }
+
+                    <!-- Add Image Form -->
+                    <hr />
+                    <h6>Thêm ảnh mới</h6>
+                    <form method="post" action="@Url.Action("Add", "RoomImageBCS240032")" class="form-inline mt-2">
+                        <input type="hidden" name="roomId" value="@Model.Id">
+                        <div class="form-group mb-2" style="flex: 1;">
+                            <input type="text" name="imageUrl" class="form-control w-100" placeholder="Nhập đường dẫn ảnh (URL)" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary mb-2 ml-2">Thêm ảnh</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Action Buttons -->
+    <div class="row mt-3">
+        <div class="col-md-12">
+            <a href="@Url.Action("Edit", new { id = Model.Id })" class="btn btn-warning">Sửa</a>
+            <a href="@Url.Action("Delete", new { id = Model.Id })" class="btn btn-danger">Xóa</a>
+            <a href="@Url.Action("Index")" class="btn btn-secondary">Quay lại</a>
+        </div>
+    </div>
+</div>

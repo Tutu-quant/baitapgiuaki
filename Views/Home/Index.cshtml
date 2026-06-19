@@ -1,8 +1,39 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+@{
+    ViewData["Title"] = "Trang chủ";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<section class="page-hero">
+    <div>
+        <div class="page-kicker">RoomHub</div>
+        <h1 class="page-title">Quản lý phòng cho thuê</h1>
+        <p class="page-subtitle">Tra cứu phòng, lọc theo trạng thái, quản lý loại phòng và cập nhật ảnh phòng trong một giao diện gọn gàng.</p>
+    </div>
+    <div class="action-row">
+        <a asp-controller="RoomBCS240032" asp-action="Index" class="btn btn-primary">Xem danh sách phòng</a>
+        <a asp-controller="RoomBCS240032" asp-action="Create" class="btn btn-outline-secondary">Thêm phòng</a>
+    </div>
+</section>
+
+<div class="row g-3">
+    <div class="col-md-4">
+        <section class="content-panel h-100">
+            <h5>Phòng cho thuê</h5>
+            <p class="text-muted mb-3">Xem danh sách, tìm kiếm, lọc và sắp xếp phòng.</p>
+            <a asp-controller="RoomBCS240032" asp-action="Index" class="btn btn-sm btn-info">Mở danh sách</a>
+        </section>
+    </div>
+    <div class="col-md-4">
+        <section class="content-panel h-100">
+            <h5>Loại phòng</h5>
+            <p class="text-muted mb-3">Quản lý nhóm phòng để dữ liệu dễ phân loại hơn.</p>
+            <a asp-controller="RoomTypeBCS240032" asp-action="Index" class="btn btn-sm btn-info">Quản lý loại</a>
+        </section>
+    </div>
+    <div class="col-md-4">
+        <section class="content-panel h-100">
+            <h5>Kho sách</h5>
+            <p class="text-muted mb-3">Giữ lại phần quản lý sách có sẵn của bài thực hành.</p>
+            <a asp-controller="Book" asp-action="Index" class="btn btn-sm btn-info">Mở kho sách</a>
+        </section>
+    </div>
 </div>

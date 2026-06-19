@@ -8,12 +8,14 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-builder.Services.AddDbContext<BookDbContext>(options =>
+builder.Services.AddDbContext<RoomManagementDbContextBCS240032>(options =>
     options.UseSqlServer(
-        builder.Configuration.GetConnectionString("BookManagement"),
+        builder.Configuration.GetConnectionString("MID_BCS240032"),
         sqlOptions => sqlOptions.EnableRetryOnFailure(maxRetryCount: 3)));
 
-builder.Services.AddScoped<IBookRepository, BookRepository>();
+builder.Services.AddScoped<IRoomRepositoryBCS240032, RoomRepositoryBCS240032>();
+builder.Services.AddScoped<IRoomTypeRepositoryBCS240032, RoomTypeRepositoryBCS240032>();
+builder.Services.AddScoped<IRoomImageRepositoryBCS240032, RoomImageRepositoryBCS240032>();
 
 var app = builder.Build();
 
@@ -40,7 +42,7 @@ app.UseMiddleware<RequestLoggingMiddleware>();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}")
+    pattern: "{controller=RoomBCS240032}/{action=Index}/{id?}")
     .WithStaticAssets();
 
 

@@ -1,0 +1,77 @@
+@model List<RoomTypeBCS240032>
+@using Lesson3_CNLTWeb.Models;
+
+@{
+    ViewData["Title"] = "Quản lý loại phòng";
+}
+
+<div class="container-fluid mt-4">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>@ViewData["Title"]</h1>
+        </div>
+    </div>
+
+    <!-- Messages -->
+    @if (!string.IsNullOrEmpty(TempData["SuccessMessage"]?.ToString()))
+    {
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            @TempData["SuccessMessage"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Đóng"></button>
+        </div>
+    }
+
+    @if (!string.IsNullOrEmpty(TempData["ErrorMessage"]?.ToString()))
+    {
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            @TempData["ErrorMessage"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Đóng"></button>
+        </div>
+    }
+
+    <!-- Add Button -->
+    <div class="row mb-3">
+        <div class="col-md-12">
+            <a href="@Url.Action("Create")" class="btn btn-success">+ Thêm loại phòng</a>
+            <a href="@Url.Action("Index", "RoomBCS240032")" class="btn btn-info">Quay lại danh sách phòng</a>
+        </div>
+    </div>
+
+    <!-- No Results -->
+    @if (!Model.Any())
+    {
+        <div class="alert alert-info">
+            <p>Chưa có loại phòng nào. Vui lòng thêm mới.</p>
+        </div>
+    }
+    else
+    {
+        <!-- Table -->
+        <div class="table-responsive">
+            <table class="table table-striped table-hover">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Tên loại phòng</th>
+                        <th>Mô tả</th>
+                        <th>Số phòng</th>
+                        <th>Hành động</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var roomType in Model)
+                    {
+                        <tr>
+                            <td>@roomType.Name</td>
+                            <td>@roomType.Description</td>
+                            <td>@roomType.Rooms.Count</td>
+                            <td>
+                                <a href="@Url.Action("Edit", new { id = roomType.Id })" class="btn btn-sm btn-warning">Sửa</a>
+                                <a href="@Url.Action("Delete", new { id = roomType.Id })" class="btn btn-sm btn-danger">Xóa</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+</div>

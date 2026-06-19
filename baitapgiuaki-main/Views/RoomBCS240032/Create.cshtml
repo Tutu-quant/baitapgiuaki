@@ -1,0 +1,93 @@
+@model RoomBCS240032
+@using Lesson3_CNLTWeb.Models;
+
+@{
+    ViewData["Title"] = "Thêm phòng mới";
+}
+
+<section class="page-hero">
+    <div>
+        <div class="page-kicker">Tạo dữ liệu</div>
+        <h1 class="page-title">@ViewData["Title"]</h1>
+        <p class="page-subtitle">Nhập thông tin cơ bản để đưa phòng vào danh sách quản lý.</p>
+    </div>
+</section>
+
+<section class="form-panel">
+    @if (!string.IsNullOrEmpty(TempData["ErrorMessage"]?.ToString()))
+    {
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            @TempData["ErrorMessage"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Đóng"></button>
+        </div>
+    }
+
+    <form asp-action="Create" method="post">
+        <div class="row g-3">
+            <div class="col-md-6">
+                <label asp-for="Name" class="form-label"></label>
+                <input asp-for="Name" class="form-control" placeholder="Ví dụ: Phòng A101" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+
+            <div class="col-md-6">
+                <label asp-for="RoomTypeId" class="form-label"></label>
+                <select asp-for="RoomTypeId" class="form-select" asp-items="ViewBag.RoomTypes">
+                    <option value="">-- Chọn loại phòng --</option>
+                </select>
+                <span asp-validation-for="RoomTypeId" class="text-danger"></span>
+            </div>
+
+            <div class="col-md-6">
+                <label asp-for="Price" class="form-label"></label>
+                <input asp-for="Price" type="number" class="form-control" step="100000" />
+                <span asp-validation-for="Price" class="text-danger"></span>
+            </div>
+
+            <div class="col-md-6">
+                <label asp-for="Area" class="form-label"></label>
+                <input asp-for="Area" type="number" class="form-control" step="0.1" />
+                <span asp-validation-for="Area" class="text-danger"></span>
+            </div>
+
+            <div class="col-12">
+                <label asp-for="Description" class="form-label"></label>
+                <textarea asp-for="Description" class="form-control" rows="4" placeholder="Mô tả tiện ích, vị trí hoặc ghi chú thêm"></textarea>
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+
+            <div class="col-12">
+                <label for="imageUrl" class="form-label">Ảnh đại diện ban đầu</label>
+                <input type="url"
+                       id="imageUrl"
+                       name="imageUrl"
+                       class="form-control"
+                       value="@ViewBag.ImageUrl"
+                       placeholder="https://cdn3.ivivu.com/2014/01/SUPER-DELUXE2.jpg"
+                       required />
+                <span class="text-danger">@Html.ValidationMessage("imageUrl")</span>
+                <div class="form-text">
+                    Nhập đường dẫn ảnh bắt đầu bằng http:// hoặc https://. Ảnh này sẽ được đặt làm ảnh đại diện của phòng mới.
+                </div>
+            </div>
+
+            <div class="col-12">
+                <div class="form-check form-switch">
+                    <input asp-for="IsAvailable" type="checkbox" class="form-check-input" />
+                    <label class="form-check-label" asp-for="IsAvailable"></label>
+                </div>
+            </div>
+
+            <div class="col-12 action-row">
+                <button type="submit" class="btn btn-primary">Thêm phòng</button>
+                <a href="@Url.Action("Index")" class="btn btn-outline-secondary">Hủy</a>
+            </div>
+        </div>
+    </form>
+</section>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

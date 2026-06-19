@@ -1,0 +1,44 @@
+# Visual Studio
+.vs/
+.vscode/
+
+# Build results
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Rider
+.idea/
+
+# NuGet
+packages/
+*.nupkg
+
+# Logs
+*.log
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# Publish output
+publish/
+
+# IIS Express
+.applicationhost.config
+
+# OS files
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Generated files
+wwwroot/lib/
+
+# Secrets
+secrets.json
+appsettings.Local.json

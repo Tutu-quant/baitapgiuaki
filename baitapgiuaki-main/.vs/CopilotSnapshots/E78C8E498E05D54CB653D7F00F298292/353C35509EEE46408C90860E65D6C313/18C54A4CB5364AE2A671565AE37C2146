@@ -1,0 +1,141 @@
+﻿using Lesson3_CNLTWeb.Models;
+using Microsoft.EntityFrameworkCore;
+
+namespace Lesson3_CNLTWeb.Data
+{
+    public class RoomManagementDbContextBCS240032 : DbContext
+    {
+        public RoomManagementDbContextBCS240032(DbContextOptions<RoomManagementDbContextBCS240032> options) : base(options)
+        {
+        }
+
+        public DbSet<RoomTypeBCS240032> RoomTypes { get; set; }
+        public DbSet<RoomBCS240032> Rooms { get; set; }
+        public DbSet<RoomImageBCS240032> RoomImages { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+
+            // RoomType configuration
+            modelBuilder.Entity<RoomTypeBCS240032>(entity =>
+            {
+                entity.ToTable("RoomType_BCS240032");
+                entity.HasKey(e => e.Id);
+                entity.Property(e => e.Id).ValueGeneratedOnAdd();
+                entity.Property(e => e.Name).HasMaxLength(100).IsRequired();
+                entity.Property(e => e.Description).HasMaxLength(500);
+
+                // Relationship: One RoomType has many Rooms
+                entity.HasMany(e => e.Rooms)
+                    .WithOne(r => r.RoomType)
+                    .HasForeignKey(r => r.RoomTypeId)
+                    .OnDelete(DeleteBehavior.Restrict); // Prevent deletion if rooms exist
+            });
+
+            // Room configuration
+            modelBuilder.Entity<RoomBCS240032>(entity =>
+            {
+                entity.ToTable("Room_BCS240032");
+                entity.HasKey(e => e.Id);
+                entity.Property(e => e.Id).ValueGeneratedOnAdd();
+                entity.Property(e => e.Name).HasMaxLength(100).IsRequired();
+                entity.Property(e => e.Price).HasColumnType("float");
+                entity.Property(e => e.Area).HasColumnType("float");
+                entity.Property(e => e.Address).HasMaxLength(255);
+                entity.Property(e => e.Description).HasMaxLength(1000);
+                entity.Property(e => e.CreatedDate).HasDefaultValueSql("GETUTCDATE()");
+                entity.Property(e => e.UpdatedDate).HasDefaultValueSql("GETUTCDATE()");
+
+                // Relationship: One Room has many RoomImages
+                entity.HasMany(e => e.RoomImages)
+                    .WithOne(i => i.Room)
+                    .HasForeignKey(i => i.RoomId)
+                    .OnDelete(DeleteBehavior.Cascade); // Delete images when room is deleted
+
+                // Index for better query performance
+                entity.HasIndex(e => e.RoomTypeId);
+                entity.HasIndex(e => e.Available);
+                entity.HasIndex(e => e.Price);
+            });
+
+            // RoomImage configuration
+            modelBuilder.Entity<RoomImageBCS240032>(entity =>
+            {
+                entity.ToTable("RoomImage_BCS240032");
+                entity.HasKey(e => e.Id);
+                entity.Property(e => e.Id).ValueGeneratedOnAdd();
+                entity.Property(e => e.ImageUrl).HasMaxLength(500).IsRequired();
+                entity.Property(e => e.CreatedDate).HasDefaultValueSql("GETUTCDATE()");
+
+                entity.HasIndex(e => new { e.RoomId, e.IsThumbnail });
+            });
+
+            // Seed data
+            SeedData(modelBuilder);
+        }
+
+        private void SeedData(ModelBuilder modelBuilder)
+        {
+            var seedDate = new DateTime(2026, 6, 19, 12, 0, 0);
+
+            // Seed RoomTypes
+            modelBuilder.Entity<RoomTypeBCS240032>().HasData(
+                new RoomTypeBCS240032 { Id = 1, Name = "Phòng Đơn", Description = "Phòng cho 1 người" },
+                new RoomTypeBCS240032 { Id = 2, Name = "Phòng Đôi", Description = "Phòng cho 2 người" },
+                new RoomTypeBCS240032 { Id = 3, Name = "Phòng VIP", Description = "Phòng cao cấp" }
+            );
+
+            // Seed Rooms
+            modelBuilder.Entity<RoomBCS240032>().HasData(
+                new RoomBCS240032
+                {
+                    Id = 1,
+                    Name = "101",
+                    RoomTypeId = 1,
+                    Price = 3000000,
+                    Area = 25,
+                    Address = "123 Nguyễn Huệ, TP.HCM",
+                    Description = "Phòng thoáng mát, view đường phố",
+                    Available = true,
+                    CreatedDate = seedDate,
+                    UpdatedDate = seedDate
+                },
+                new RoomBCS240032
+                {
+                    Id = 2,
+                    Name = "102",
+                    RoomTypeId = 2,
+                    Price = 5000000,
+                    Area = 35,
+                    Address = "123 Nguyễn Huệ, TP.HCM",
+                    Description = "Phòng rộng, 2 giường",
+                    Available = true,
+                    CreatedDate = seedDate,
+                    UpdatedDate = seedDate
+                },
+                new RoomBCS240032
+                {
+                    Id = 3,
+                    Name = "201",
+                    RoomTypeId = 3,
+                    Price = 8000000,
+                    Area = 50,
+                    Address = "123 Nguyễn Huệ, TP.HCM",
+                    Description = "Phòng VIP, tiện nghi đầy đủ",
+                    Available = false,
+                    CreatedDate = seedDate,
+                    UpdatedDate = seedDate
+                }
+            );
+
+            // Seed RoomImages
+            modelBuilder.Entity<RoomImageBCS240032>().HasData(
+                new RoomImageBCS240032 { Id = 1, RoomId = 1, ImageUrl = "/images/room101-1.jpg", IsThumbnail = true, CreatedDate = seedDate },
+                new RoomImageBCS240032 { Id = 2, RoomId = 1, ImageUrl = "/images/room101-2.jpg", IsThumbnail = false, CreatedDate = seedDate },
+                new RoomImageBCS240032 { Id = 3, RoomId = 2, ImageUrl = "/images/room102-1.jpg", IsThumbnail = true, CreatedDate = seedDate },
+                new RoomImageBCS240032 { Id = 4, RoomId = 3, ImageUrl = "/images/room201-1.jpg", IsThumbnail = true, CreatedDate = seedDate }
+            );
+        }
+    }
+}
